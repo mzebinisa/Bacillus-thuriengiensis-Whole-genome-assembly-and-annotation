@@ -1,0 +1,1 @@
+2024-10-07 15:26:28 DEBUG:busco.run_BUSCO	Command line: /usr/bin/busco -i pilon.fasta -m genome -l --auto-lineage-proc -o buscoed_pilon

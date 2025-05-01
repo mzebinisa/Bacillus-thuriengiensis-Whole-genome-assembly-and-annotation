@@ -1,0 +1,7 @@
+- "left reads":
+  - "/mnt/c/Users/Zebinisa/Documents/Genome_bacteria/Gavrilov_1_S106_R1_001_trimmed.fastq.gz"
+  "number": !!int "1"
+  "orientation": "fr"
+  "right reads":
+  - "/mnt/c/Users/Zebinisa/Documents/Genome_bacteria/Gavrilov_1_S106_R2_001_trimmed.fastq.gz"
+  "type": "paired-end"

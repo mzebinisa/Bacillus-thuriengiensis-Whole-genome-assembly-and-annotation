@@ -1,0 +1,6 @@
+
+=== Error correction and assembling warnings:
+ * 0:03:18.749   154M / 2461M WARN   ChromosomeRemover        (chromosome_remover.cpp    : 114)   More than 20% of long edges have coverage significantly different from median (total 1518134 of 6126959 bases).
+ * 0:03:18.749   154M / 2461M WARN   ChromosomeRemover        (chromosome_remover.cpp    : 115)   In most cases it means that either read coverage is uneven or significant contamination is present - both of these two cases make plasmidSPAdes' results unreliable
+ * 0:03:18.749   154M / 2461M WARN   ChromosomeRemover        (chromosome_remover.cpp    : 116)   However, that situation may still be OK if you expect to see large plasmids in your dataset, so plasmidSPAdes will continue to work
+======= Warnings saved to /mnt/c/Users/Zebinisa/Documents/Genome_bacteria/piloned_assembly/pilon_assembly/warnings.log

@@ -1,0 +1,28 @@
+2024-11-02 20:59:21 DEBUG:busco.run_BUSCO	Command line: /usr/bin/busco -i pilon_scaffold_MULTI_CSAR.fna -m genome -l bacteria_odb10 -o scaffold_busco
+2024-11-02 20:59:21 INFO:busco.run_BUSCO	***** Start a BUSCO v5.5.0 analysis, current time: 11/02/2024 20:59:21 *****
+2024-11-02 20:59:21 DEBUG:busco.ConfigManager	Getting config file
+2024-11-02 20:59:21 INFO:busco.ConfigManager	Configuring BUSCO with local environment
+2024-11-02 20:59:21 INFO:busco.BuscoConfig	Mode is genome
+2024-11-02 20:59:21 ERROR:busco.BuscoRunner	A run with the name /mnt/c/Users/Zebinisa/Documents/Genome_bacteria/piloned_assembly/scaffold_busco already exists...
+	If you are sure you wish to overwrite existing files, please use the -f (force) option
+2024-11-02 20:59:21 DEBUG:busco.BuscoRunner	A run with the name /mnt/c/Users/Zebinisa/Documents/Genome_bacteria/piloned_assembly/scaffold_busco already exists...
+	If you are sure you wish to overwrite existing files, please use the -f (force) option
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/busco/run_BUSCO.py", line 70, in run
+    self.load_config()
+  File "/usr/lib/python3/dist-packages/busco/run_BUSCO.py", line 62, in load_config
+    self.config_manager.load_busco_config_main()
+  File "/usr/lib/python3/dist-packages/busco/BuscoLogger.py", line 62, in wrapped_func
+    self.retval = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/busco/ConfigManager.py", line 56, in load_busco_config_main
+    self.config_main.validate()
+  File "/usr/lib/python3/dist-packages/busco/BuscoConfig.py", line 544, in validate
+    self._check_no_previous_run()
+  File "/usr/lib/python3/dist-packages/busco/BuscoConfig.py", line 757, in _check_no_previous_run
+    raise BatchFatalError(
+busco.Exceptions.BatchFatalError: A run with the name /mnt/c/Users/Zebinisa/Documents/Genome_bacteria/piloned_assembly/scaffold_busco already exists...
+	If you are sure you wish to overwrite existing files, please use the -f (force) option
+2024-11-02 20:59:21 ERROR:busco.BuscoRunner	BUSCO analysis failed!
+2024-11-02 20:59:21 ERROR:busco.BuscoRunner	Check the logs, read the user guide (https://busco.ezlab.org/busco_userguide.html), and check the BUSCO issue board on https://gitlab.com/ezlab/busco/issues
+
